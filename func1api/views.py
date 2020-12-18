@@ -58,8 +58,8 @@ def callback(request):
                    elif mtext == '@快速選單':
                         func.sendQuickreply(event)
               
-                   elif mtext == '@按鈕樣板':
-                        func.sendButton(event)
+                   elif mtext == '珍珠奶茶價格/匯率':
+                        func.sendButton4(event)
     
                    elif mtext == '@確認樣板':
                         func.sendConfirm(event)
