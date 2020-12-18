@@ -98,28 +98,21 @@ def sendQuickreplya(event):  #快速選單
         line_bot_api.reply_message(event.reply_token,message)
     except:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='發生錯誤！'))
-def sendButton4(event):  #按鈕樣版
+def sendButton4(event):  #珍珠奶茶價格/匯率
     try:
         message = TemplateSendMessage(
-            alt_text='按鈕樣板',
+            alt_text='珍珠奶茶價格/匯率',
             template=ButtonsTemplate(
-                    thumbnail_image_url  ='https://i.imgur.com/ZGaXkKd.jpg' ,
-                    title  =  'demo' ,
-                    text  =  'pizza demo' ,
+                    thumbnail_image_url  ='https://cc.tvbs.com.tw/img/upload/2019/06/20/20190620120304-1cbd7cdf.jpg' ,
+                    title  =  '珍奶各國資訊' ,
+                    text  =  '' ,
             actions=[
-                    MessageTemplateAction(  #顯示文字計息
-                        label='文字訊息',
-                        text='@購買披薩'
-                    ),
+                    
                     URITemplateAction(  #開啟網頁
-                        label  =  'website mcu' ,
-                        uri  =  'https://web.mcu.edu.tw/'
+                        label  =  'More' ,
+                        uri  =  'https://bit.ly/3mwbXfd'
                     ),
-                    PostbackTemplateAction(  #執行Postback功能,觸發Postback事件
-                        label='回傳訊息',  #按鈕文字
-                        #text='@購買披薩',  #顯示文字計息
-                        data='action=buy'  #Postback資料
-                    ),
+                    
                 ]
             )
         )
