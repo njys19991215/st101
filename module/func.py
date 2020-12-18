@@ -105,7 +105,7 @@ def sendButton4(event):  #珍珠奶茶價格/匯率
             template=ButtonsTemplate(
                     thumbnail_image_url  ='https://cc.tvbs.com.tw/img/upload/2019/06/20/20190620120304-1cbd7cdf.jpg' ,
                     title  =  '珍奶各國資訊' ,
-                    text  =  '' ,
+                    text  =  '珍奶各國資訊' ,
             actions=[
                     
                     URITemplateAction(  #開啟網頁
